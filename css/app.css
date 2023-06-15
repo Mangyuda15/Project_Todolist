@@ -1,0 +1,133 @@
+* {
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+}
+
+:root {
+  --primary: #012133;
+  --secondary: #ffffff;
+}
+
+body {
+  background-color: #ffffff;
+  color: #012133;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Awal Header */
+.header {
+  background-color: var(--primary);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 470px;
+  height: 170px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.header-title {
+  color: aliceblue;
+  text-align: center;
+}
+
+.notification-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.notification {
+  background-color: aliceblue;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  padding: 10px;
+  width: 35%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5px;
+}
+
+.list-container {
+  margin-top: 20px;
+  width: 450px;
+  height: 300px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+.list-item {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--secondary);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  min-height: 80px;
+}
+
+.list-text {
+  width: 380px;
+  word-wrap: break-word;
+}
+
+.delete-list {
+  font-size: 30px;
+  color: var(--primary);
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  width: 450px;
+}
+
+.input-container input {
+  width: 380px;
+  height: 50px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-style: none;
+  background: #ffffff;
+  border: 1ps solid var(--secondary);
+  padding: 20px;
+  color: #012133;
+}
+
+.button-input-submit {
+  color: var(--primary);
+  font-size: 50px;
+}
+
+.button-input-submit:hover,
+.delete-list:hover {
+  opacity: 0.9;
+}
+
+/* Akhir Header */
